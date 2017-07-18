@@ -7,7 +7,7 @@ class Header extends Component {
         <div className="page-header navbar navbar-fixed-top">
             <div className="page-header-inner">
                 <div className="page-logo">
-                    <a href="/"><img src="images/coinage.png" alt="logo" className="logo-default" height={45}/></a>
+                    <a href="/coinage"><img src="images/coinage.png" alt="logo" className="logo-default" height={45}/></a>
                     <div className="menu-toggler sidebar-toggler hide">
                     </div>
                 </div>

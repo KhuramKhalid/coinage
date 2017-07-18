@@ -9,7 +9,7 @@ import { hashHistory } from 'react-router';
 class NoRoute extends Component {
 
     componentWillMount() {
-        hashHistory.push('/reports');
+        hashHistory.push('/currencies');
     }
 
     render() { return ( <span></span> ); }

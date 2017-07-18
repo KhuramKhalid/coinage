@@ -39,7 +39,7 @@ import AppBinder from './AppBinder';
 import NoRoute from './components/NoRoute'
 
 /* coinage components */
-import Reports from './components/reports/Reports';
+import Currencies from './components/currencies/Currencies';
 import CoinageStore, { history } from './CoinageStore';
 
 /* initialize client logging */
@@ -56,7 +56,7 @@ const router = (
             <Router history={history}>
                 <Route path="/" component={AppBinder}>
                     <IndexRoute component={NoRoute} />
-                    <Route path="/reports" component={Reports} />
+                    <Route path="/currencies" component={Currencies} />
                     <Route path="*" component={NoRoute}/>
                 </Route>
             </Router>

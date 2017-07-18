@@ -10,10 +10,22 @@ var coinageMenu = [
         broadcasterId:0,
         submenu: [
             {
-                title: 'Reports',
-                url: '#/reports',
-                icon: 'icon-bar-chart',
+                title: 'Currencies',
+                url: '#/currencies',
+                icon: 'fa fa-money',
                 id: '111'
+            },
+            {
+                title: 'Assets',
+                url: '#/assets',
+                icon: 'icon-diamond',
+                id: '112'
+            },
+            {
+                title: 'Trending',
+                url: '#/trending',
+                icon: 'icon-graph',
+                id: '113'
             }
         ]
     }
