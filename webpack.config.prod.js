@@ -12,7 +12,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'docs'),
     filename: 'bundle.[chunkhash].js',
-    publicPath: '/',
+    publicPath: '/coinage',
     sourceMapFilename: "bundle.[chunkhash].js.map"
   },
   plugins: [
