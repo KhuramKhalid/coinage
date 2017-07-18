@@ -1,5 +1,6 @@
 /* core imports */
 import React, { Component } from 'react';
+import Firebase from './Firebase';
 
 /* lineup components */
 import Header from './components/Header';
@@ -7,6 +8,12 @@ import Footer from './components/Footer';
 import MenuSideBar from './components/menu/MenuSideBar';
 
 class RootApp extends Component {
+
+  componentDidMount() {
+
+    /* initialize Firebase client */
+    Firebase.initialize(this.props);
+  }
 
   render() {
 

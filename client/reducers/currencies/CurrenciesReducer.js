@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
 
-import countData from './countData';
+import currenciesConfig from './currenciesConfig';
 
 const CurrenciesReducer = combineReducers(
     {
-        countData
+        currenciesConfig
     }
 );
 

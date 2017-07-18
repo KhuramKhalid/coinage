@@ -11,7 +11,7 @@ import RootReducer from './reducers/RootReducer';
 
 const defaultState = {
     currencies: {
-        countData: { data:[], busy:false }
+        currenciesConfig: [ { currency:'btc', busy:false } ]
     }
 };
 

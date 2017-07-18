@@ -1,17 +1,21 @@
 import CoinageResource from '../../api/CoinageResource';
 import Logger from '../../Logger';
 
-export function getTicker(limit = 20, convert = 'EUR') { 
+export function getTicker(currency = 'btc', index) { 
     return dispatch => {
 
-        CoinageResource.getTicker(limit, convert).then(function(response) {
+        dispatch({ type:'GET_TICKER_REQUEST', index });
 
-            console.log(response);
+        CoinageResource.getTicker(currency).then(function(data) {
+
+            dispatch({ type:'GET_TICKER_SUCCESS', index, data });
 
         }).catch(function(exception) {
 
             /* log exception */
             Logger.log(exception);
+
+            dispatch({ type:'GET_TICKER_FAILURE', index });
         });
     }
 }

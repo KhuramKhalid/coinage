@@ -1,6 +1,6 @@
 
 const hostname = window.location.hostname;
 
-const TXMediaAPICommons = { API_BASE: 'https://api.coinmarketcap.com/v1' }
+const TXMediaAPICommons = { API_BASE: 'https://coinmarketcap-nexuist.rhcloud.com/api' }
 
 export default TXMediaAPICommons;

@@ -6,7 +6,7 @@ import RootApp from './RootApp';
 
 function mapStateToProps(state) {
     return {
-        reports: state.reports
+        currencies: state.currencies
     }
 }
 
