@@ -1,2 +1,2 @@
-/* global report actions */
-export * from './ReportActions';
+/* global currencies actions */
+export * from './CurrenciesActions';

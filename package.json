@@ -1,6 +1,6 @@
 {
   "name": "coinage",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Coinage project",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,7 @@
     "url": "https://github.com/KhuramKhalid/coinage.git"
   },
   "dependencies": {
+    "axios": "^0.16.2",
     "bootstrap": "^3.3.7",
     "bootstrap-contextmenu": "^1.0.0",
     "bootstrap-datepaginator": "^1.1.3",

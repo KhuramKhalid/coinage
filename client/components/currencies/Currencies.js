@@ -4,6 +4,10 @@ import CircularProgress from 'material-ui/CircularProgress';
 
 class Currencies extends React.PureComponent {
 
+    componentDidMount() {
+        this.props.getTicker();
+    }
+
     render() {
         return (
             <div id="Currencies">

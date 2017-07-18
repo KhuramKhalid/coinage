@@ -10,7 +10,7 @@ var { Map, List } = require('immutable');
 import RootReducer from './reducers/RootReducer';
 
 const defaultState = {
-    reports: {
+    currencies: {
         countData: { data:[], busy:false }
     }
 };
