@@ -35,9 +35,11 @@ class Currency extends React.PureComponent {
 
     render() {
 
-        var busy = this.props.currency.busy;
+        var currency = this.props.currency;
 
-        var data = this.props.currency.data;
+        var busy = currency.busy;
+
+        var data = currency.data;
 
         var currency = '';
         var marketCap = '';
@@ -61,6 +63,7 @@ class Currency extends React.PureComponent {
                 <td> {marketCap} </td>
                 <td> {price} </td>
                 <td> {change} </td>
+                <td onClick={() => this.props.removeCurrencyFromConfig(data.symbol)}> <span className="btn btn-icon-only font-red-soft"><i className="fa fa-times"></i></span> </td>
             </tr>
         )
     }

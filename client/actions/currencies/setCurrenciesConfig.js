@@ -1,7 +1,7 @@
 import * as firebase from 'firebase';
 import Logger from '../../Logger';
 
-export function setCurrenciesConfig(config = [{ currency:'btc', busy:false}]) { 
+export function setCurrenciesConfig(config = [{ currency:'btc' }]) { 
     return dispatch => {
 
         try {
